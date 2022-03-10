@@ -11,4 +11,15 @@ entries:
     urls:
     - https://github.com/rfinland/rook-ceph-chart-operator/releases/download/rook-ceph-0.1.7/rook-ceph-0.1.7.tgz
     version: 0.1.7
+  rook-ceph-chart-operator:
+  - apiVersion: v2
+    appVersion: "1"
+    created: "2022-03-10T21:17:56.661010414Z"
+    description: rook-ceph-chart-operator
+    digest: a63cf8fb25f6cf1accf1d3431772501afa116aaabbb0de3e64a51465be4e29de
+    name: rook-ceph-chart-operator
+    type: application
+    urls:
+    - https://github.com/rfinland/rook-ceph-chart-operator/releases/download/rook-ceph-chart-operator-0.2.0/rook-ceph-chart-operator-0.2.0.tgz
+    version: 0.2.0
 generated: "2022-03-10T21:11:42.163373357Z"
