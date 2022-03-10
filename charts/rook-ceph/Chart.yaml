@@ -1,6 +1,0 @@
-apiVersion: v2
-name: rook-ceph
-description: rook-ceph
-type: application
-version: 0.2.4
-appVersion: "1"

@@ -1,2 +1,0 @@
-# rook-ceph
-rook-ceph
