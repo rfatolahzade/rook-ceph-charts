@@ -3,6 +3,16 @@ entries:
   rook-ceph:
   - apiVersion: v2
     appVersion: "1"
+    created: "2022-03-10T21:28:38.04748822Z"
+    description: rook-ceph
+    digest: 56821289049a461ab9c273104d20a75a5dd9c5ab1ce9f089ee99500c11417691
+    name: rook-ceph
+    type: application
+    urls:
+    - https://github.com/rfinland/rook-ceph-chart-operator/releases/download/rook-ceph-0.2.2/rook-ceph-0.2.2.tgz
+    version: 0.2.2
+  - apiVersion: v2
+    appVersion: "1"
     created: "2022-03-10T21:11:42.416357366Z"
     description: rook-ceph
     digest: 8b35f02816b97e9a6dbe3d22423f1cce5ad56ca7e803a24e4e3e53f3738c1102
