@@ -1,0 +1,65 @@
+apiVersion: v1
+entries:
+  rook-ceph:
+  - apiVersion: v2
+    appVersion: "1"
+    created: "2022-03-10T21:32:27.512713648Z"
+    description: rook-ceph
+    digest: 813eeb6ab703396e49db97b2e0897cb8068875d1e1bed7326d53f6cb01898482
+    name: rook-ceph
+    type: application
+    urls:
+    - https://github.com/rfinland/rook-ceph-chart-operator/releases/download/rook-ceph-0.2.4/rook-ceph-0.2.4.tgz
+    version: 0.2.4
+  - apiVersion: v2
+    appVersion: "1"
+    created: "2022-03-10T21:30:38.101606268Z"
+    description: rook-ceph
+    digest: 18885947bcfdb0dde8be6461691ec6a86995572fd11d32051c8c41d13904dd0a
+    name: rook-ceph
+    type: application
+    urls:
+    - https://github.com/rfinland/rook-ceph-chart-operator/releases/download/rook-ceph-0.2.3/rook-ceph-0.2.3.tgz
+    version: 0.2.3
+  - apiVersion: v2
+    appVersion: "1"
+    created: "2022-03-10T21:28:38.04748822Z"
+    description: rook-ceph
+    digest: 56821289049a461ab9c273104d20a75a5dd9c5ab1ce9f089ee99500c11417691
+    name: rook-ceph
+    type: application
+    urls:
+    - https://github.com/rfinland/rook-ceph-chart-operator/releases/download/rook-ceph-0.2.2/rook-ceph-0.2.2.tgz
+    version: 0.2.2
+  - apiVersion: v2
+    appVersion: "1"
+    created: "2022-03-10T21:11:42.416357366Z"
+    description: rook-ceph
+    digest: 8b35f02816b97e9a6dbe3d22423f1cce5ad56ca7e803a24e4e3e53f3738c1102
+    name: rook-ceph
+    type: application
+    urls:
+    - https://github.com/rfinland/rook-ceph-chart-operator/releases/download/rook-ceph-0.1.7/rook-ceph-0.1.7.tgz
+    version: 0.1.7
+  rook-ceph-chart-operator:
+  - apiVersion: v2
+    appVersion: "1"
+    created: "2022-03-10T21:22:56.895056055Z"
+    description: rook-ceph-chart-operator
+    digest: 1128aac882e0fec686eba749f04a966768a53b46505ffb8f31d483611b7ff281
+    name: rook-ceph-chart-operator
+    type: application
+    urls:
+    - https://github.com/rfinland/rook-ceph-chart-operator/releases/download/rook-ceph-chart-operator-0.2.1/rook-ceph-chart-operator-0.2.1.tgz
+    version: 0.2.1
+  - apiVersion: v2
+    appVersion: "1"
+    created: "2022-03-10T21:17:56.661010414Z"
+    description: rook-ceph-chart-operator
+    digest: a63cf8fb25f6cf1accf1d3431772501afa116aaabbb0de3e64a51465be4e29de
+    name: rook-ceph-chart-operator
+    type: application
+    urls:
+    - https://github.com/rfinland/rook-ceph-chart-operator/releases/download/rook-ceph-chart-operator-0.2.0/rook-ceph-chart-operator-0.2.0.tgz
+    version: 0.2.0
+generated: "2022-03-10T21:11:42.163373357Z"
