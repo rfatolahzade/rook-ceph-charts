@@ -1,0 +1,53 @@
+allowVolumeExpansion: true
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  annotations:
+    meta.helm.sh/release-name: rook-ceph-cluster
+    meta.helm.sh/release-namespace: rook-ceph
+    storageclass.kubernetes.io/is-default-class: "true"
+  labels:
+    app.kubernetes.io/managed-by: Helm
+  name: ceph-block-two
+parameters:
+  clusterID: rook-ceph
+  csi.storage.k8s.io/controller-expand-secret-name: rook-csi-rbd-provisioner
+  csi.storage.k8s.io/controller-expand-secret-namespace: rook-ceph
+  csi.storage.k8s.io/fstype: ext4
+  csi.storage.k8s.io/node-stage-secret-name: rook-csi-rbd-node
+  csi.storage.k8s.io/node-stage-secret-namespace: rook-ceph
+  csi.storage.k8s.io/provisioner-secret-name: rook-csi-rbd-provisioner
+  csi.storage.k8s.io/provisioner-secret-namespace: rook-ceph
+  imageFeatures: layering
+  imageFormat: "2"
+  pool: ceph-blockpool
+provisioner: rook-ceph.rbd.csi.ceph.com
+reclaimPolicy: Delete
+volumeBindingMode: Immediate
+---
+kind: PersistentVolume
+apiVersion: v1
+metadata:
+  name: ceph-pv
+  labels:
+    type: local
+spec:
+  storageClassName: ceph-block
+  capacity:
+    storage: 2Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path:  /mnt/data
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: ceph-pvc
+spec:
+  storageClassName: ceph-block
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 2Gi
